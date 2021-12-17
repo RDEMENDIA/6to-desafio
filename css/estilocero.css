@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    color: white;
+}
 .html {
     font-family: "open Sans", sans-serif;
 }
@@ -193,4 +196,7 @@ ul, ol {
 .plan-precios:last-child {
     border-right: none;
 }
+}
+container {
+    display: inline;
 }
