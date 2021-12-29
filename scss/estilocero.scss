@@ -25,7 +25,7 @@
 }
 body {
     color: black;
-    background-color: #3399ff;
+    background-color: $color2;
 }
 .html {
     font-family: "open Sans", sans-serif;
@@ -188,13 +188,14 @@ form {
     color: black;
 }
 .h2-contacto {
-    color: whitesmoke
+    color: whitesmoke;
 }
 .titulo-faq {
-    @include flexCenter();
     margin: 0 auto 0 auto;
-    padding: 0;
-
+    padding: 5rem 0 2rem 0;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: whitesmoke;
 }
 .boton-form {
     text-align: center;
@@ -216,14 +217,7 @@ footer div {
     text-align: center;
     background-color: $color2;
 }
-// .carousel-item {
-//     height: 25rem;
-//     width: 50rem;
-//     background-position: center;
-//     background-size: cover;
-//     position: relative;
-//     background-image: url(/media/carhartt.png);
-// }
+
 .carousel-item-1 {
     background-image: url(/media/mango.png);
 }
@@ -322,13 +316,25 @@ footer div {
     }
 }
 .imagen-nosotros {
-    width: 10rem;
-    border-radius: 5rem;
-    background-color: #9dd1ff;    
+    width: 15em;
+    border-radius: 10em;
+    background-color: goldenrod;
 }
 .h4-main {
     color: goldenrod;
 }
 .boton-faq {
-    display: block;
+    font-size: 1.5rem;
+    color: black;
+}
+.hov:hover {
+    background-color: $color1;
+    filter:saturate(500%);
+        
+}
+.que-hacemos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
 }

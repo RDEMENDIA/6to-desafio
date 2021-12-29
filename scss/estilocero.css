@@ -82,7 +82,7 @@ footer .disclaimer ul li {
 
 body {
   color: black;
-  background-color: #3399ff;
+  background-color: #607196;
 }
 
 .html {
@@ -276,8 +276,7 @@ form {
 .preguntas-frecuentes {
   background-color: #DDDEE4;
   padding: 10px 0 10px 0;
-  margin: 10px auto 10px auto;
-  width: 600px;
+  border: 1px solid black;
   color: black;
 }
 
@@ -286,19 +285,11 @@ form {
 }
 
 .titulo-faq {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background-color: azure;
   margin: 0 auto 0 auto;
-  padding: 0;
+  padding: 5rem 0 2rem 0;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: whitesmoke;
 }
 
 .boton-form {
@@ -426,12 +417,33 @@ footer div {
 }
 
 .imagen-nosotros {
-  width: 10rem;
-  border-radius: 5rem;
-  background-color: #9dd1ff;
+  width: 15em;
+  border-radius: 10em;
+  background-color: goldenrod;
 }
 
 .h4-main {
   color: goldenrod;
+}
+
+.boton-faq {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.hov:hover {
+  background-color: #DDDEE4;
+  -webkit-filter: saturate(500%);
+          filter: saturate(500%);
+}
+
+.que-hacemos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 /*# sourceMappingURL=estilocero.css.map */
