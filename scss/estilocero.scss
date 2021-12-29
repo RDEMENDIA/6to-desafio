@@ -1,6 +1,22 @@
-/* define variables for the primary colors */
+
+@mixin flexCenter ($background){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $background;
+}
 
 @import "colores";
+@import "footer";
+@import "header";
+@import "maps";
+@import "extends";
+
+
+.nosotros {
+    @extend %emeype;
+}
 
 * {
     margin: 0;
@@ -8,28 +24,13 @@
     box-sizing: border-box;
 }
 body {
-    color: white;
+    color: black;
+    background-color: #3399ff;
 }
 .html {
     font-family: "open Sans", sans-serif;
 }
-.header {
-    background-color: $color1;
-}
-.logo {
-	height: 50px;
-	border-radius: 2.25rem;
-}
-.logo:hover{
-transition: ease-in-out 0.5s;
-border-radius:50%;
--webkit-border-radius:50%;
-box-shadow: 0px 0px 5px 5px #DDDEE4;
--webkit-box-shadow: 0px 0px 5px 5px grey;
-transform: rotateY(180deg);
-transform: scale(1.2);
-filter:opacity(2);
-}
+
 .contenido-main {
     padding-top: 50px;
     text-align: center;
@@ -38,24 +39,35 @@ filter:opacity(2);
     padding-top: 150px;
     text-align: center;    
 }
-.main {
+main {
     background-color: $color2;
 }
-.boton {
-    margin-top: 50px;
-    border-radius: 30px;
+.boton-entrar {
+    background-color: $color3;
+    border-radius: 20px;
+    border: 0;
+    &:hover {
+        filter: saturate(150%);
+        background-color: $color3;
+    }
 }
+.h1-index {
+    font-weight: bolder;
+    font-size: 4rem;
+    color: whitesmoke;
+}
+
 .contenido-main-plan {
-    padding-top: 10px;
-    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 4px;
     text-align: center;
-    color: white;
+    color: whitesmoke;
+}
+.separador {
+    padding-bottom: 6rem;
 }
 .foto {
     width: 28rem;
-}
-.separador {
-    padding: 5rem;
 }
 .centrar {
     margin-left: 50px;
@@ -65,50 +77,7 @@ filter:opacity(2);
     color: $color2;
 }
 
-
-
-/* footer--------------------------------------------------------------- */
-
-.logo-footer {
-	height: 3rem;
-	border-radius: 1.5rem;
-}
-.footer {    
-    background-color: $color1;
-}
-.mapa-lugar {
-    font-size: 18px;
-	text-align: center;
-    color: #607196;
-}
-.disclaimer {
-    font-size: 16px;
-    text-align: center;
-	align-content: center;
-    padding-top: 8rem;
-    
-}
-.logo-copyright {
-    font-size: 18px;
-    color: $color2;
-	text-align: center;
-    font-weight: 300;
-    padding-top: 8vh; 
-}
-#mapaLugar {
-	width: 165px; 
-	height: 90px;
-}
-
-.disclaimer {
-    ul {
-        li {
-            list-style-type: none;
-            display: inline;
-            padding: 10px;
-        }
-    }
-}
+// -------------------------precios------------------------
 
 .main-precios {
     display: flex;
@@ -118,14 +87,12 @@ filter:opacity(2);
     background-color: $color2;
 }
 .panel {
-    background-color: white;
-    /* border-radius: 10px; */
+    @include flexCenter(white);
+    border-radius: 1rem;
     padding: 15px 25px;
     width: 100%;
     max-width: 960px;
-    display: flex;
     flex-direction: column;
-    text-align: center;
     text-transform: uppercase;
 }
 ul, ol {
@@ -195,11 +162,173 @@ ul, ol {
     flex-direction: row;
 }
 .plan-precios {
-    border-bottom: none;
     border-right: 1px solid #e1f1ff;
     padding: 25px 50px;
 }
 .plan-precios:last-child {
     border-right: none;
 }
+}
+
+// ------------------------------------selectores contacto------------------------------
+form {
+    color: $color1;
+}
+.container-form {
+    background-color: $color1;
+    padding-top: 1rem;
+    border-radius: 14px;
+    padding-bottom: 1rem;
+}
+.preguntas-frecuentes {
+    background-color: $color1;
+    padding: 10px 0 10px 0;
+    border: 1px solid black;
+    // margin: 10px auto 10px auto;
+    color: black;
+}
+.h2-contacto {
+    color: whitesmoke
+}
+.titulo-faq {
+    @include flexCenter();
+    margin: 0 auto 0 auto;
+    padding: 0;
+
+}
+.boton-form {
+    text-align: center;
+    justify-content: center;
+}
+.form-container {
+    padding: 2rem;
+}
+@media (max-width: 590px){
+.imagen-sobre {
+    display: none;
+}    
+}
+footer div {
+    height: auto;
+    background-color: $color1;
+}
+.mark {
+    text-align: center;
+    background-color: $color2;
+}
+// .carousel-item {
+//     height: 25rem;
+//     width: 50rem;
+//     background-position: center;
+//     background-size: cover;
+//     position: relative;
+//     background-image: url(/media/carhartt.png);
+// }
+.carousel-item-1 {
+    background-image: url(/media/mango.png);
+}
+.carousel-item-2{
+    background-image: url(/media/sybilla.png);
+}
+.carousel-item-3 {
+    background-image: url(/media/superdry.png);
+}
+.carousel-item-4 {
+    background-image: url(/media/the-north-face-kepsar.png);
+}
+.carousel-item-5 {
+    background-image: url(/media/adidas.png);
+}
+.carousel-item-6 {
+    background-image: url(/media/americanino.png);
+}
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 0;
+    padding-right: 15rem;
+    padding-left: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    background-color: $color2;
+}
+  /* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+  /* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 25rem;
+    background-position: center;
+    background-size: cover;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// aplicare mas mixins para el diseno responsive luego
+// No media query for `xs` since this is the default in Bootstrap
+@media (max-width: 576px) {
+    .carousel {
+        margin-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .carousel {
+        margin-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .carousel {
+        margin-bottom: 0;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+    }
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .carousel {
+        margin-bottom: 0;
+        padding-right: 1rem;
+        padding-left: 10rem;
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .carousel {
+        margin-bottom: 0;
+        padding-right: 15rem;
+        padding-left: 15rem;
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+    }
+}
+.imagen-nosotros {
+    width: 10rem;
+    border-radius: 5rem;
+    background-color: #9dd1ff;    
+}
+.h4-main {
+    color: goldenrod;
+}
+.boton-faq {
+    display: block;
 }
