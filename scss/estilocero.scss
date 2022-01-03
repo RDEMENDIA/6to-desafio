@@ -38,6 +38,7 @@ body {
 .contenido-main-suscribite {
     padding-top: 150px;
     text-align: center;    
+    padding-bottom: 2rem;
 }
 main {
     background-color: $color2;
@@ -59,7 +60,7 @@ main {
 
 .contenido-main-plan {
     padding-top: 15px;
-    padding-bottom: 4px;
+    padding-bottom: 9px;
     text-align: center;
     color: whitesmoke;
 }
@@ -316,9 +317,11 @@ footer div {
     }
 }
 .imagen-nosotros {
-    width: 15em;
-    border-radius: 10em;
+    min-width: none;
+    width: 210px;
+    border-radius: 105px;
     background-color: goldenrod;
+    
 }
 .h4-main {
     color: goldenrod;
@@ -337,4 +340,42 @@ footer div {
     justify-content: center;
     text-align: center;
 
+}
+.colo {
+    // border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.pes {
+    line-height: 2rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.section-white {
+    background-color: whitesmoke;
+}
+.imagen-icono {
+    height: 90px;
+    width: 90px;
+}
+.icono-item {
+    background-color: goldenrod;
+    border-radius: 3rem;
+    margin: 1rem auto;
+    max-width: 400px;
+    min-width: 300px;
+}
+.tarjetas {
+    margin: 1rem auto;
+    width: 20rem;
+}
+.caja {
+    background-color: goldenrod;
+    transition: all 1s;
+    &:hover {
+        transform: skewX(15deg);
+    }
 }

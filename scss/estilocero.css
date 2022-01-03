@@ -97,6 +97,7 @@ body {
 .contenido-main-suscribite {
   padding-top: 150px;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 main {
@@ -123,7 +124,7 @@ main {
 
 .contenido-main-plan {
   padding-top: 15px;
-  padding-bottom: 4px;
+  padding-bottom: 9px;
   text-align: center;
   color: whitesmoke;
 }
@@ -417,8 +418,9 @@ footer div {
 }
 
 .imagen-nosotros {
-  width: 15em;
-  border-radius: 10em;
+  min-width: none;
+  width: 210px;
+  border-radius: 105px;
   background-color: goldenrod;
 }
 
@@ -445,5 +447,58 @@ footer div {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.colo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.pes {
+  line-height: 2rem;
+  font-weight: normal;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.section-white {
+  background-color: whitesmoke;
+}
+
+.imagen-icono {
+  height: 90px;
+  width: 90px;
+}
+
+.icono-item {
+  background-color: goldenrod;
+  border-radius: 3rem;
+  margin: 1rem auto;
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.tarjetas {
+  margin: 1rem auto;
+  width: 20rem;
+}
+
+.caja {
+  background-color: goldenrod;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.caja:hover {
+  -webkit-transform: skewX(15deg);
+          transform: skewX(15deg);
 }
 /*# sourceMappingURL=estilocero.css.map */
