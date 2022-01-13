@@ -29,8 +29,8 @@ body {
 }
 .html {
     font-family: "open Sans", sans-serif;
+    font-size: 1rem;
 }
-
 .contenido-main {
     padding-top: 50px;
     text-align: center;
@@ -46,7 +46,6 @@ main {
 .boton-entrar {
     background-color: $color3;
     border-radius: 20px;
-    border: 0;
     &:hover {
         filter: saturate(150%);
         background-color: $color3;
@@ -180,6 +179,7 @@ form {
     padding-top: 1rem;
     border-radius: 14px;
     padding-bottom: 1rem;
+    margin: 0 auto 0 auto;
 }
 .preguntas-frecuentes {
     background-color: $color1;
@@ -356,26 +356,46 @@ footer div {
 }
 .section-white {
     background-color: whitesmoke;
+    margin: auto;
+    background: url(../media/sketch-monochrome-clothes-icons-set/1238047.jpg);
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.section-white-inversa {
+    background-color: whitesmoke;
+    margin: auto;
+    background: url(../media/sketch-monochrome-clothes-icons-set/1238047.jpg);
+    background-size: cover; /* Resize the background image to cover the entire container */
+    display: flex;
+    @media (max-width: 768px) {
+    flex-direction: column-reverse;
+}
 }
 .imagen-icono {
     height: 90px;
     width: 90px;
 }
 .icono-item {
-    background-color: goldenrod;
+    background-color: grey;
     border-radius: 3rem;
     margin: 1rem auto;
     max-width: 400px;
     min-width: 300px;
+    color: white;
+    font-weight: bolder;
 }
 .tarjetas {
     margin: 1rem auto;
-    width: 20rem;
+    width: 19rem;
 }
-.caja {
-    background-color: goldenrod;
-    transition: all 1s;
-    &:hover {
-        transform: skewX(15deg);
-    }
+.por-que {
+    font-weight: bolder;
+    color: goldenrod; 
+}
+
+.iconos-fondo {
+    background-color: white;
+}
+.imagen-inicio-info {
+    height: 500px;
+    width: 500px;
 }

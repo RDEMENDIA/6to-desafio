@@ -87,6 +87,7 @@ body {
 
 .html {
   font-family: "open Sans", sans-serif;
+  font-size: 1rem;
 }
 
 .contenido-main {
@@ -107,7 +108,6 @@ main {
 .boton-entrar {
   background-color: #FF7B9C;
   border-radius: 20px;
-  border: 0;
 }
 
 .boton-entrar:hover {
@@ -272,6 +272,7 @@ form {
   padding-top: 1rem;
   border-radius: 14px;
   padding-bottom: 1rem;
+  margin: 0 auto 0 auto;
 }
 
 .preguntas-frecuentes {
@@ -471,6 +472,30 @@ footer div {
 
 .section-white {
   background-color: whitesmoke;
+  margin: auto;
+  background: url(../media/sketch-monochrome-clothes-icons-set/1238047.jpg);
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
+.section-white-inversa {
+  background-color: whitesmoke;
+  margin: auto;
+  background: url(../media/sketch-monochrome-clothes-icons-set/1238047.jpg);
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .section-white-inversa {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .imagen-icono {
@@ -479,26 +504,31 @@ footer div {
 }
 
 .icono-item {
-  background-color: goldenrod;
+  background-color: grey;
   border-radius: 3rem;
   margin: 1rem auto;
   max-width: 400px;
   min-width: 300px;
+  color: white;
+  font-weight: bolder;
 }
 
 .tarjetas {
   margin: 1rem auto;
-  width: 20rem;
+  width: 19rem;
 }
 
-.caja {
-  background-color: goldenrod;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+.por-que {
+  font-weight: bolder;
+  color: goldenrod;
 }
 
-.caja:hover {
-  -webkit-transform: skewX(15deg);
-          transform: skewX(15deg);
+.iconos-fondo {
+  background-color: white;
+}
+
+.imagen-inicio-info {
+  height: 500px;
+  width: 500px;
 }
 /*# sourceMappingURL=estilocero.css.map */
