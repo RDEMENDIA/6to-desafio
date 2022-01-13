@@ -360,11 +360,7 @@ footer div {
     background: url(../media/sketch-monochrome-clothes-icons-set/1238047.jpg);
     background-size: cover; /* Resize the background image to cover the entire container */
 }
-.section-white-inversa {
-    background-color: whitesmoke;
-    margin: auto;
-    background: url(../media/sketch-monochrome-clothes-icons-set/1238047.jpg);
-    background-size: cover; /* Resize the background image to cover the entire container */
+.inversa {
     display: flex;
     @media (max-width: 768px) {
     flex-direction: column-reverse;
@@ -398,4 +394,8 @@ footer div {
 .imagen-inicio-info {
     height: 500px;
     width: 500px;
+}
+.texto-info {
+    font-size: 2rem;
+    font-weight: bolder;
 }
