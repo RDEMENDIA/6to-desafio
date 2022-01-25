@@ -19,6 +19,13 @@ footer {
         text-align: center;
         align-content: center;
         padding-top: 6rem;
+        ul {
+            li {
+                list-style-type: none;
+                display: inline;
+                padding: 1rem;
+            }
+        }
         
     }
     .logo-copyright {
@@ -33,13 +40,4 @@ footer {
         height: 5rem;
     }
 
-    .disclaimer {
-        ul {
-            li {
-                list-style-type: none;
-                display: inline;
-                padding: 1rem;
-            }
-        }
-    }
 }

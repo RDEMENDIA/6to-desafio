@@ -12,16 +12,20 @@
     <meta property="og:image" content="" src="">
     <!-- aca se deja la marca del desarrollador como una firma, sirve -->
     <meta property="og:author" content="Rodrigo De Mendia">
-    <!-- descripcion del sitio -->    
+    <!-- descripcion del sitio -->
     <meta property="og:description" content="Cloflix es un sitio web que ofrece servicios de alquiler, logistica y asesoramiento de vestimenta, accesorios, prendas de vestir">
     <!-- icono de la pagina -->
     <link rel="shortcut icon" href="media/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <!-- fuentes -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">    
-    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- hoja de estilos -->
     <link rel="stylesheet" href="scss/estilocero.css">
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Cloflix, tu guardarropas online</title>
 </head>
 <body>
@@ -51,75 +55,170 @@
             </div>
         </nav>
     </header>
-    <main class="main-marcas container">
-        
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <main class="container main-marcas">
+        <br>
+        <h3 class="d-flex justify-content-center">Marcas destacadas</h3>
+        <br>
+        <div class="container row pb-5">
+            <div class="d-flex col-lg-3 col-md-6 flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="imagen-marcas" src="media/mango.png" alt="imagen mango">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="container tarjeta-dorso">
+                            <li class="display-6"><a href="#"> Mujer</a></li>
+                            <li class="display-6"><a href="#"> Hombre</a></li>
+                            <li class="display-6"><a href="#"> Nino</a></li>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item carousel-item-1 active">            
-                    <div class="container">
-                    <div class="carousel-caption">
-                        <p><a class="btn btn-md btn-primary" href="https://shop.mango.com/us-es">ir al sitio</a></p>                        
+            <div class="d-flex col-lg-3 col-md-6 flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="imagen-marcas" src="media/lamartina.png" alt="imagen mango">
                     </div>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-2">            
-                    <div class="container">
-                    <div class="carousel-caption">
-                        <p><a class="btn btn-md btn-primary" href="https://www.americanino.com/">ir al sitio</a></p>
-                    </div>
+                    <div class="flip-card-back">
+                        <div class="container tarjeta-dorso">
+                            <li class="display-6"><a href="#"> Mujer</a></li>
+                            <li class="display-6"><a href="#"> Hombre</a></li>
+                            <li class="display-6"><a href="#"> Nino</a></li>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item carousel-item-3">
+                
+            </div>
+            <div class="d-flex col-lg-3 col-md-6 flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="imagen-marcas" src="media/superdry.png" alt="imagen mango">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="container tarjeta-dorso">
+                            <li class="display-6"><a href="#"> Mujer</a></li>
+                            <li class="display-6"><a href="#"> Hombre</a></li>
+                            <li class="display-6"><a href="#"> Nino</a></li>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex col-lg-3 col-md-6 flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="imagen-marcas" src="media/sybilla.png" alt="imagen mango">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="container tarjeta-dorso">
+                            <li class="display-6"><a href="#"> Mujer</a></li>
+                            <li class="display-6"><a href="#"> Hombre</a></li>
+                            <li class="display-6"><a href="#"> Nino</a></li>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex col-lg-3 col-md-6 flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="imagen-marcas" src="media/the-north-face-kepsar.png" alt="imagen mango">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="container tarjeta-dorso">
+                            <li class="display-6"><a href="#"> Mujer</a></li>
+                            <li class="display-6"><a href="#"> Hombre</a></li>
+                            <li class="display-6"><a href="#"> Nino</a></li>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex col-lg-3 col-md-6 flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="imagen-marcas" src="media/adidas.png" alt="imagen mango">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="container tarjeta-dorso">
+                            <li class="display-6"><a href="#"> Mujer</a></li>
+                            <li class="display-6"><a href="#"> Hombre</a></li>
+                            <li class="display-6"><a href="#"> Nino</a></li>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex col-lg-3 col-md-6 flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="imagen-marcas" src="media/americanino.png" alt="imagen mango">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="container tarjeta-dorso">
+                            <li class="display-6"><a href="#"> Mujer</a></li>
+                            <li class="display-6"><a href="#"> Hombre</a></li>
+                            <li class="display-6"><a href="#"> Nino</a></li>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex col-lg-3 col-md-6 flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="imagen-marcas" src="media/nike1.png" alt="imagen mango">
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="container tarjeta-dorso">
+                            <li class="display-6"><a href="#"> Mujer</a></li>
+                            <li class="display-6"><a href="#"> Hombre</a></li>
+                            <li class="display-6"><a href="#"> Nino</a></li>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
             
-                    <div class="container">
-                    <div class="carousel-caption">
-                        <p><a class="btn btn-md btn-primary" href="https://www.americanino.com/">ir al sitio</a></p>
-                    </div>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-4">
-                    
-            
-                    <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                    </div>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-5">
-                    <div class="container">
-                    <div class="carousel-caption">
-                        <p><a class="btn btn-md btn-primary" href="https://www.americanino.com/">ir al sitio</a></p>
-                    </div>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-item-6">
-                    
-                    <div class="container">
-                    <div class="carousel-caption">
-                        <p><a class="btn btn-lg btn-primary" href="https://www.americanino.com/">ir al sitio</a></p>
-                    </div>
-                    </div>
-                </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>    
+        </div>
+        <div>
+            <br>
+            <h3 class="d-flex justify-content-center pt-5">Categorias</h3>
+            <br>
+        </div>
+        <div class="container row">
+            <div class="d-flex flex-column col-lg-2 col-sm-6 pb-5">
+                <h4 class="sub-marcas">Accesorios</h4>
+                <br>
+                <img class="img-categorias" src="media/accessories.png" alt="">
+            </div>
+            <div class="d-flex flex-column col-lg-2 col-sm-6 pb-5">
+                <h4 class="sub-marcas">Chaquetas</h4>
+                <br>
+                <img class="img-categorias" src="media/jacket.png" alt="">
+            </div>
+            <div class="d-flex flex-column col-lg-2 col-sm-6 pb-5">
+                <h4 class="sub-marcas">Zapatos</h4>
+                <br>
+                <img class="img-categorias" src="media/shoes.png" alt="">
+            </div>
+            <div class="d-flex flex-column col-lg-2 col-sm-6 pb-5">
+                <h4 class="sub-marcas">Pantalones</h4>
+                <br>
+                <img class="img-categorias" src="media/short.png" alt="">
+            </div>
+            <div class="d-flex flex-column col-lg-2 col-sm-6 pb-5">
+                <h4 class="sub-marcas">Faldas</h4>
+                <br>
+                <img class="img-categorias" src="media/skirt.png" alt="">
+            </div>
+            <div class="d-flex flex-column col-lg-2 col-sm-6 pb-5">
+                <h4 class="sub-marcas">Camisas</h4>
+                <br>
+                <img class="img-categorias" src="media/t-shirt.png" alt="">
+            </div>
+        </div>
     </main>
 
 

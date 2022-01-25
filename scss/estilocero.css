@@ -22,6 +22,12 @@ footer .disclaimer {
   padding-top: 6rem;
 }
 
+footer .disclaimer ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 1rem;
+}
+
 footer .logo-copyright {
   font-size: 1rem;
   color: #607196;
@@ -33,12 +39,6 @@ footer .logo-copyright {
 footer #mapaLugar {
   width: 8rem;
   height: 5rem;
-}
-
-footer .disclaimer ul li {
-  list-style-type: none;
-  display: inline;
-  padding: 1rem;
 }
 
 .header {
@@ -55,12 +55,12 @@ footer .disclaimer ul li {
   transition: ease-in-out 0.5s;
   border-radius: 50%;
   -webkit-border-radius: 50%;
-  box-shadow: 0px 0px 5px 5px #DDDEE4;
+  box-shadow: 0px 0px 1px 1px #DDDEE4;
   -webkit-box-shadow: 0px 0px 5px 5px grey;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-filter: opacity(2);
           filter: opacity(2);
 }
@@ -73,21 +73,139 @@ footer .disclaimer ul li {
   color: white;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  color: black;
-  background-color: #607196;
-}
-
-.html {
-  font-family: "open Sans", sans-serif;
+.nosotros {
+  margin: auto;
+  padding: auto;
   font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.imagen-nosotros {
+  min-width: none;
+  width: 210px;
+  border-radius: 105px;
+  background-color: goldenrod;
+}
+
+.nosotros {
+  margin: auto;
+  padding: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.main-marcas {
+  background-color: white;
+}
+
+.imagen-marcas {
+  padding-right: 15px;
+  width: 250px;
+  height: 250px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 0 auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: whitesmoke;
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flip-card-back {
+  background-color: #DDDEE4;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.tarjeta-dorso {
+  list-style-type: none;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.tarjeta-dorso a:visited {
+  color: blue;
+}
+
+.tarjeta-dorso a:hover {
+  color: #FF7B9C;
+}
+
+.img-categorias {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  border-radius: 50px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+
+.img-categorias:hover {
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  box-shadow: 0px 0px 1px 1px #DDDEE4;
+  -webkit-box-shadow: 0px 0px 5px 5px grey;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: opacity(2);
+          filter: opacity(2);
+}
+
+.sub-marcas {
+  margin: 0 auto;
+}
+
+.nosotros {
+  margin: auto;
+  padding: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
 }
 
 .contenido-main {
@@ -99,10 +217,6 @@ body {
   padding-top: 150px;
   text-align: center;
   padding-bottom: 2rem;
-}
-
-main {
-  background-color: #607196;
 }
 
 .boton-entrar {
@@ -133,17 +247,84 @@ main {
   padding-bottom: 6rem;
 }
 
-.foto {
-  width: 28rem;
-}
-
-.centrar {
-  margin-left: 50px;
-}
-
 .card {
   background: #DDDEE4;
   color: #607196;
+}
+
+.h4-main {
+  color: goldenrod;
+}
+
+.section-white {
+  background-color: whitesmoke;
+  margin: auto;
+  background: url(../media/sketch-monochrome-clothes-icons-set/1238047.jpg);
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+}
+
+.inversa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .inversa {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.imagen-icono {
+  height: 90px;
+  width: 90px;
+}
+
+.icono-item {
+  background-color: grey;
+  border-radius: 3rem;
+  margin: 1rem auto;
+  max-width: 400px;
+  min-width: 300px;
+  color: white;
+  font-weight: bolder;
+}
+
+.tarjetas {
+  margin: 1rem auto;
+}
+
+.por-que {
+  font-weight: bolder;
+  color: goldenrod;
+}
+
+.iconos-fondo {
+  background-color: white;
+}
+
+.texto-info {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px #FF7B9C;
+}
+
+@media (max-width: 590px) {
+  .texto-info {
+    font-size: 1.5rem;
+  }
+}
+
+.nosotros {
+  margin: auto;
+  padding: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
 }
 
 .main-precios {
@@ -183,6 +364,15 @@ main {
   text-transform: uppercase;
 }
 
+@media (min-width: 900px) {
+  .panel {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 ul, ol {
   list-style: none;
 }
@@ -191,8 +381,20 @@ ul, ol {
   border-bottom: 1px solid #e1f1ff;
 }
 
+@media (min-width: 900px) {
+  .plan-precios {
+    padding: 25px 50px;
+  }
+}
+
 .plan-precios:last-child {
   border-bottom: none;
+}
+
+@media (min-width: 900px) {
+  .plan-precios:last-child {
+    border-right: none;
+  }
 }
 
 .precios-img {
@@ -247,24 +449,16 @@ ul, ol {
   background-color: #FF7B9C;
 }
 
-@media (min-width: 900px) {
-  .panel {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .plan-precios {
-    border-right: 1px solid #e1f1ff;
-    padding: 25px 50px;
-  }
-  .plan-precios:last-child {
-    border-right: none;
-  }
+.nosotros {
+  margin: auto;
+  padding: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
 }
 
-form {
-  color: #DDDEE4;
+.form-container {
+  padding: 2rem;
 }
 
 .container-form {
@@ -275,34 +469,11 @@ form {
   margin: 0 auto 0 auto;
 }
 
-.preguntas-frecuentes {
-  background-color: #DDDEE4;
-  padding: 10px 0 10px 0;
-  border: 1px solid black;
-  color: black;
-}
-
-.h2-contacto {
-  color: whitesmoke;
-}
-
-.titulo-faq {
-  margin: 0 auto 0 auto;
-  padding: 5rem 0 2rem 0;
-  font-size: 3rem;
-  font-weight: bolder;
-  color: whitesmoke;
-}
-
 .boton-form {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.form-container {
-  padding: 2rem;
 }
 
 @media (max-width: 590px) {
@@ -311,122 +482,12 @@ form {
   }
 }
 
-footer div {
-  height: auto;
-  background-color: #DDDEE4;
-}
-
-.mark {
-  text-align: center;
-  background-color: #607196;
-}
-
-.carousel-item-1 {
-  background-image: url(/media/mango.png);
-}
-
-.carousel-item-2 {
-  background-image: url(/media/sybilla.png);
-}
-
-.carousel-item-3 {
-  background-image: url(/media/superdry.png);
-}
-
-.carousel-item-4 {
-  background-image: url(/media/the-north-face-kepsar.png);
-}
-
-.carousel-item-5 {
-  background-image: url(/media/adidas.png);
-}
-
-.carousel-item-6 {
-  background-image: url(/media/americanino.png);
-}
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 0;
-  padding-right: 15rem;
-  padding-left: 15rem;
-  padding-top: 1rem;
-  padding-bottom: 4rem;
-  background-color: #607196;
-}
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 25rem;
-  background-position: center;
-  background-size: cover;
-}
-
-@media (max-width: 576px) {
-  .carousel {
-    margin-bottom: 0;
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
-@media (min-width: 576px) {
-  .carousel {
-    margin-bottom: 0;
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 1rem;
-    padding-bottom: 4rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .carousel {
-    margin-bottom: 0;
-    padding-right: 4rem;
-    padding-left: 4rem;
-    padding-top: 1rem;
-    padding-bottom: 4rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .carousel {
-    margin-bottom: 0;
-    padding-right: 1rem;
-    padding-left: 10rem;
-    padding-top: 1rem;
-    padding-bottom: 4rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .carousel {
-    margin-bottom: 0;
-    padding-right: 15rem;
-    padding-left: 15rem;
-    padding-top: 1rem;
-    padding-bottom: 4rem;
-  }
-}
-
-.imagen-nosotros {
-  min-width: none;
-  width: 210px;
-  border-radius: 105px;
-  background-color: goldenrod;
-}
-
-.h4-main {
-  color: goldenrod;
+.titulo-faq {
+  margin: 0 auto 0 auto;
+  padding: 5rem 0 2rem 0;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: whitesmoke;
 }
 
 .boton-faq {
@@ -440,95 +501,24 @@ footer div {
           filter: saturate(500%);
 }
 
-.que-hacemos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+.h2-contacto {
+  color: whitesmoke;
 }
 
-.colo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.pes {
-  line-height: 2rem;
-  font-weight: normal;
-  font-size: 1.2rem;
-  text-align: center;
+body {
+  color: black;
+  background-color: #607196;
 }
 
-.section-white {
-  background-color: whitesmoke;
-  margin: auto;
-  background: url(../media/sketch-monochrome-clothes-icons-set/1238047.jpg);
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
-}
-
-.inversa {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (max-width: 768px) {
-  .inversa {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-}
-
-.imagen-icono {
-  height: 90px;
-  width: 90px;
-}
-
-.icono-item {
-  background-color: grey;
-  border-radius: 3rem;
-  margin: 1rem auto;
-  max-width: 400px;
-  min-width: 300px;
-  color: white;
-  font-weight: bolder;
-}
-
-.tarjetas {
-  margin: 1rem auto;
-  width: 19rem;
-}
-
-.por-que {
-  font-weight: bolder;
-  color: goldenrod;
-}
-
-.iconos-fondo {
-  background-color: white;
-}
-
-.imagen-inicio-info {
-  height: 500px;
-  width: 500px;
-}
-
-.texto-info {
-  font-size: 2rem;
-  font-weight: bolder;
+.html {
+  font-family: "open Sans", sans-serif;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=estilocero.css.map */

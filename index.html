@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- hoja de estilos -->
     <link rel="stylesheet" href="scss/estilocero.css">
+    <!-- aos animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Cloflix, tu guardarropas online</title>
 </head>
@@ -32,9 +33,9 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html"><img src="media/logo.svg" alt="imagen del logo" class="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
@@ -55,7 +56,7 @@
           </nav>
     </header>
     
-    <main class="main">
+    <main>
       <div class="container">	 
         <div class="row pb-5">
           <div class="col-md-6">
@@ -90,7 +91,7 @@
               <div class="card-body shadow">
                 <h5 class="card-title">Basico</h5>
                 <p class="card-text">Sos una persona simple y necesitas ideas para tu evento?</p>
-                <a href="#" class="btn btn-primary animate animate__animated animate__pulse">Este es tu plan</a>
+                <a href="#" class="btn btn-primary animate animate__animated animate__pulse h-100 w-100">Este es tu plan</a>
               </div>
             </div>
           </div>
@@ -100,7 +101,7 @@
               <div class="card-body shadow">
                 <h5 class="card-title">Flex</h5>
                 <p class="card-text">Necesitas algun consejo y alguien que te diga que ponerte?</p>
-                <a href="#" class="btn btn-primary wow bounceInUp">Consulta con los especialistas</a>
+                <a href="#" class="btn btn-primary animate animate__animated animate__pulse h-100 w-100">Contacta los especialistas</a>
               </div>
             </div>
           </div>
@@ -110,7 +111,7 @@
               <div class="card-body shadow">
                 <h5 class="card-title">Premium</h5>
                 <p class="card-text">Solo queres lo mejor y sin limites, nuestro plan mas completo</p>
-                <a href="#" class="btn btn-primary">Entra aca</a>
+                <a href="#" class="btn btn-primary animate animate__animated animate__pulse h-100 w-100">Entra aca</a>
               </div>
             </div>
           </div>
@@ -131,7 +132,7 @@
           
           <div class="col-md-3 icono-item d-flex align-items-center">
             <img src="media/save-money.png" class="imagen-icono" alt="">
-            <p>Nuestras estadisticas muestran un ahorro significativo comparado con la compra de prendas</p>
+            <p>Cuidamos tu bolsillo, nuestras estadisticas muestran un ahorro significativo comparado con la compra de prendas mensuales promedio</p>
           </div>
           
           <div class="col-md-3 icono-item d-flex align-items-center">
@@ -140,30 +141,32 @@
           </div>
         </div>
       </div>
-        <div class="section-white">  
+        <div class="section-white pb-5">  
+          
           <div class="container-fluid row"> 
-            <div class="col-md-6 texto-info" data-aos="fade" data-aos-delay="300">
-              Lodipisci laudantium rerum officiis, dolor quisquam quibusdam qui nemo non repudiandae beatae. Mollitia, officiis iste. Est magnam quod quis eligendi, blanditiis a rerum voluptatum voluptas ad ipsum commodi quasi maiores!
+            <div class="col-md-5 pt-5 offset-1 texto-info" data-aos="fade" data-aos-delay="300">
+              Conoce nuestro catálogo de productos online, elegi entre miles de prendas y explora por categorias. Una vez que armes tu carrito, lo tendremos listo y puedes venir a buscarlo al punto mas cercano
             </div>
-            <div class="col-md-5 offset-1" data-aos="fade" data-aos-delay="300">
-              <img src="media/Coolness-pana.svg" class="img-fluid imagen-inicio-info">
+            <div class="col-md-5" data-aos="fade" data-aos-delay="300">
+              <img src="media/Coolness-pana.svg" class="img-fluid">
             </div>
           </div>
+
           <div class="container-fluid row inversa">
-            <div class="col-md-6" data-aos="fade" data-aos-delay="300">
-              <img src="media/Self confidence-bro.svg" class="img-fluid imagen-inicio-info">
+            <div class="col-md-5 offset-1" data-aos="fade" data-aos-delay="300">
+              <img src="media/Self confidence-bro.svg" class="img-fluid">
             </div>
-            <div class="col-md-6 texto-info" data-aos="fade" data-aos-delay="300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perferendis porro aliquid. Blanditiis repellat impedit commodi molestias, eligendi, natus velit ipsa amet eos explicabo voluptas?
+            <div class="col-md-5 offset-1 pt-5 texto-info" data-aos="fade" data-aos-delay="300">
+              Y como sabemos que estar a la moda nunca está demás, en tu tienda online de Cloflix tenemos gran variedad de artículos y accesorios como: ropa, perfumes, carteras, relojes y todo lo necesario para complementar tu look en cualquier temporada del año.
             </div>
           </div>
           
           <div class="container-fluid row"> 
-            <div class="col-md-6 texto-info" data-aos="fade" data-aos-delay="300">
-              Adipisci laudantium rerum officiis, dolor quisquam quibusdam qui nemo non repudiandae beatae. Mollitia, officiis iste. Est magnam quod quis eligendi, blanditiis a rerum voluptatum voluptas ad ipsum commodi quasi maiores!
+            <div class="col-md-5 offset-1 pt-5 texto-info" data-aos="fade" data-aos-delay="300">
+              Uno de nuestros principales objetivos es facilitarte la manera en la que haces tus compras online, ya que te ofrecemos un amplio catálogo de productos los cuales podrás recibir hasta la puerta de tu casa o bien, recogerlos en nuestras tiendas físicas.
             </div>
-            <div class="col-md-6" data-aos="fade" data-aos-delay="300">
-              <img src="media/Pleasant surprise-amico.svg" class="img-fluid imagen-inicio-info">
+            <div class="col-md-6 pb-5" data-aos="fade" data-aos-delay="300">
+              <img src="media/Pleasant surprise-amico.svg" class="img-fluid">
             </div>
           </div>
         </div>
@@ -194,7 +197,7 @@
               </div>  
           </div>
       </div>
-  </footer>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

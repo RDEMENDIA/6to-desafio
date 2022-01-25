@@ -1,0 +1,42 @@
+@import "colores" ;
+@import "extends";
+
+.form-container {
+    padding: 2rem;
+}
+.container-form {
+    background-color: $color1;
+    padding-top: 1rem;
+    border-radius: 14px;
+    padding-bottom: 1rem;
+    margin: 0 auto 0 auto;
+}
+.boton-form {
+    text-align: center;
+    justify-content: center;
+}
+
+.imagen-sobre {
+    @media (max-width: 590px) {
+        display: none;
+    }
+    
+}
+.titulo-faq {
+    margin: 0 auto 0 auto;
+    padding: 5rem 0 2rem 0;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+.boton-faq {
+    font-size: 1.5rem;
+    color: black;
+}
+.hov:hover {
+    background-color: $color1;
+    filter:saturate(500%);       
+}
+.h2-contacto {
+    color: whitesmoke;
+}

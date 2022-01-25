@@ -1,0 +1,88 @@
+@import "colores" ;
+@import "extends";
+
+.main-precios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $color2;
+}
+.panel {
+    @include flexCenter(white);
+    border-radius: 1rem;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    flex-direction: column;
+    text-transform: uppercase;
+    @media (min-width: 900px) {
+        flex-direction: row;
+    }
+}
+ul, ol {
+    list-style: none;
+}
+.plan-precios {
+    border-bottom: 1px solid #e1f1ff;
+    @media (min-width: 900px) {
+        padding: 25px 50px;
+    }
+}
+.plan-precios:last-child {
+    border-bottom: none;
+    @media (min-width: 900px) {
+        border-right: none;
+    }
+}
+
+.precios-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+.precios-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.precios-lista { 
+    margin: 50px 0 25px;
+    color: #016ff9;
+}
+
+.precios-lista-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+}
+
+.precios-lista-item:last-child{
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.precios-precio {
+    color: $color3; 
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.precios-boton {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+.precios-boton:hover, .precios-boton:focus {
+    background-color: $color3;
+}

@@ -1,0 +1,14 @@
+@import "colores" ;
+@import "extends";
+
+
+.nosotros {
+    @extend %emeype;
+}
+.imagen-nosotros {
+    min-width: none;
+    width: 210px;
+    border-radius: 105px;
+    background-color: goldenrod;
+    
+}
